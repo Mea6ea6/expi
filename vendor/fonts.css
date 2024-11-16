@@ -1,0 +1,60 @@
+/* Inter */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Inter Regular'), local('Inter-Regular'),
+		url('./fonts/Inter-Regular.otf') format('opentype'),
+		url('./fonts/Inter-Regular.woff2') format('woff2'),
+		url('./fonts/Inter-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Inter Medium'), local('Inter-Medium'),
+		url('./fonts/Inter-Medium.otf') format('opentype'),
+		url('./fonts/Inter-Medium.woff2') format('woff2'),
+		url('./fonts/Inter-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Inter Italic";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Inter Bold Italic'), local('Inter-BoldItalic'),
+		url('./fonts/Inter-BoldItalic.otf') format('opentype'),
+		url('./fonts/Inter-BoldItalic.woff2') format('woff2'),
+		url('./fonts/Inter-BoldItalic.ttf') format('truetype');
+}
+
+/* Inter Tight */
+@font-face {
+    font-family: "Inter Tight";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: local('Inter Tight Medium'), local('InterTight-Medium'),
+        url("./fonts/InterTight-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter Tight";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Inter Tight Regular'), local('InterTight-Regular'),
+      url("./fonts/InterTight-Regular.ttf") format("truetype");
+}
+    
+/* PP Monument Extended */
+@font-face {
+  font-family: "PP Monument Extended";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: local('PP Monument Extended Regular Bold Italic'), local('PPMonumentExtended-BoldItalic'),
+      url("./fonts/PPMonumentExtended-BoldItalic.ttf") format("truetype");
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/x-icon/x-icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="pages/auth.css">
+    <title>Sign In</title>
+</head>
+<body class="background">
+    
+    <div class="page">
+
+        <header class="header">
+            <h2 class="header__title">EXPI</h2>
+            <div class="header__line"></div>
+        </header>
+
+        <main class="content">
+
+            <section class="auth">
+                <h2 class="auth__title">sign in</h2>
+                <form class="auth__form">
+                    <label class="auth__label" for="username">Name</label>
+                    <input class="auth__input" type="username" id="username" name="username" placeholder="John Wick" minlength="2" maxlength="40">
+                    <label class="auth__label" for="email">Email</label>
+                    <input class="auth__input" type="email" id="email" name="email" placeholder="EXPI@gmail.com" minlength="2" maxlength="80">
+                    <label class="auth__label" for="password">Password</label>
+                    <input class="auth__input" type="password" id="password" name="password" placeholder="givemeyourpassword" minlength="2" maxlength="80">
+                    <div class="auth__submit-btn-wrapper">
+                        <button class="auth__submit-btn" aria-label="sign-in" type="submit">Create an account</button>
+                    </div>              
+                </form>
+                <div class="auth__line"></div>
+                <div class="auth__alt">
+                    <a class="auth__alt-btn" aria-label="sign-in" href="https://www.google.com">
+                        <img src="./images/auth/__google-icon.svg" alt="Google-Logo"> Google
+                    </a>
+                    <a class="auth__alt-btn" aria-label="sign-in" href="https://www.facebook.com">
+                        <img src="./images/auth/__facebook-icon.svg" alt="Facebook-Logo"> Facebook
+                    </a>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <a class="footer__link" href="./log-in.html">Already have an account? Log in</a>
+        </footer>
+
+    </div>
+
+</body>
+</html>

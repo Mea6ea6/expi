@@ -1,3 +1,11 @@
 :root {
-    --font: unset;
+    --heading-font: 'PP Monument Extended', 'Inter Italic';
+    --main-font: 'Inter Tight', 'Inter';
+    --green: #24CE70;
+    --white-F: #FFFFFF;
+    --white-F7: #F7F7F7;
+    --white-EB: #EBEBEB;
+    --black: #101011;
+    --transition: all 0.3s;
+    --max-width: 1440px;
 }

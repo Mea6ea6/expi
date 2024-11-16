@@ -3,11 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="shortcut icon" href="images/x-icon/" type="image/x-icon"> -->
-    <link rel="stylesheet" href="pages/main.css">
+    <link rel="shortcut icon" href="images/x-icon/x-icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="pages/index.css">
     <title>EXPI</title>
 </head>
-<body>
+<body class="background">
     
+    <div class="page">
+
+        <header class="header">
+            <div class="header__container">
+                <p class="header__logo">EXPI</p>
+                <nav class="header__nav-bar">
+                    <a class="header__nav-link header__nav-link_active" href="#">
+                        <img class="header__nav-link-icon" src="./images/index/header/__projects.png" alt="projects">Projects
+                    </a>
+                    <a class="header__nav-link" href="#">
+                        <img class="header__nav-link-icon" src="./images/index/header/__vacancies.png" alt="vacancies">Vacancies
+                    </a>
+                    <a class="header__nav-link" href="#">
+                        <img class="header__nav-link-icon" src="./images/index/header/__employers.png" alt="employers">Employers
+                    </a>
+                    <a class="header__nav-link" href="#">
+                        <img class="header__nav-link-icon" src="./images/index/header/__study.png" alt="study">Study
+                    </a>
+                </nav>
+                <a class="header__login-link" href="./log-in.html">
+                    <img class="header__login-icon" src="./images/index/header/__log-in.png" alt="log-in">Log in
+                </a>
+            </div>
+            <div class="header__line"></div>
+        </header>
+
+        <main class="content">
+
+            <section class="projects">
+                <div class="projects__container">
+                    <div class="projects__heading">
+                        <h1 class="projects__title">Startups</h1>
+                        <p class="projects__caption">1341 project</p>
+                    </div>
+                    <ul class="projects__nav-btns">
+                        <li class="projects__nav-wrapper projects__nav-btn_active">
+                            <button class="projects__nav-btn">Startups</button>
+                        </li>
+                        <li class="projects__nav-wrapper">
+                            <button class="projects__nav-btn">Team</button>
+                        </li>
+                        <li class="projects__nav-wrapper">
+                            <button class="projects__nav-btn">Date</button>
+                        </li>
+                        <li class="projects__nav-wrapper">
+                            <button class="projects__nav-btn">Projects</button>
+                        </li>
+                        <li class="projects__nav-wrapper">
+                            <button class="projects__nav-btn">All</button>
+                        </li>
+                    </ul>
+                    <div class="projects__line"></div>
+                    <div class="projects__content">
+                        <div class="projects__filters">
+                        </div>
+                        <div class="projects__list">
+                        </div>
+                    </div>                    
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer__container">
+                <h2 class="footer__title">Zimba Simba</h2>
+                <nav class="footer__nav-bar">
+                    <a class="footer__nav-link" href="#">Projects</a>
+                    <a class="footer__nav-link" href="#">Vacancies</a>
+                    <a class="footer__nav-link" href="#">Employers</a>
+                    <a class="footer__nav-link" href="#">Study</a>
+                </nav>                
+            </div>
+        </footer>
+    
+    </div>
+
 </body>
 </html>
