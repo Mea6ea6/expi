@@ -32,21 +32,20 @@
 
 /* Inter Tight */
 @font-face {
-    font-family: "Inter Tight";
-    font-style: normal;
-    font-weight: 600;
-    font-display: swap;
-    src: local('Inter Tight Medium'), local('InterTight-Medium'),
-        url("./fonts/InterTight-Medium.ttf") format("truetype");
-}
-
-@font-face {
   font-family: "Inter Tight";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
   src: local('Inter Tight Regular'), local('InterTight-Regular'),
       url("./fonts/InterTight-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Inter Tight";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: local('Inter Tight Medium'), local('InterTight-Medium'),
+        url("./fonts/InterTight-Medium.ttf") format("truetype");
 }
     
 /* PP Monument Extended */

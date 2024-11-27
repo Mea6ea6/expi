@@ -20,7 +20,6 @@
 
 .header {
     width: 100%;
-    height: 115px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,6 +28,7 @@
 .header__container {
     max-width: var(--max-width);
     width: 100%;
+    height: 115px;
     margin-top: auto;
     display: flex;
     align-items: center;
@@ -119,8 +119,388 @@
 }
 
 .content {
+    width: 100%;
     margin-top: 60px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     flex: 1 0 auto;
+}
+
+.projects {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.projects__container {
+    max-width: var(--max-width);
+    width: 100%;
+}
+.projects__heading {
+    width: 100%;
+    display: flex;
+    align-items: end;
+    gap: 14px;
+}
+.projects__title {
+    font-family: var(--heading-font);
+    font-style: italic;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 100%;
+}
+.projects__caption {
+    font-weight: 500;
+    font-size: 17px;
+}
+.projects__nav-btns {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.projects__nav-wrapper {
+    background-color: transparent;
+    width: 150px;
+    height: 60px;
+    box-sizing: border-box;
+    padding: 2px;
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 21px;
+    border: 1.5px solid transparent;
+    transition: var(--transition);
+}
+.projects__nav-wrapper:hover {
+    border: 1.5px solid var(--green);
+}
+.projects__nav-wrapper:hover .projects__nav-btn {
+    color: var(--white-F);
+    background-color: var(--green);
+}
+.projects__nav-wrapper:active {
+    transform: scale(0.96);
+}
+.projects__nav-btn_active {
+    border: 1.5px solid var(--green);
+}
+.projects__nav-btn_active .projects__nav-btn {
+    color: var(--white-F);
+    background-color: var(--green);
+}
+.projects__nav-btn_active:active {
+    transform: scale(1);
+}
+.projects__nav-btn {
+    font-weight: 500;
+    font-size: 17px;
+    background-color: var(--white-EB);
+    width: 100%;
+    height: 100%;
+    border-radius: 19px;
+    transition: var(--transition);
+}
+.projects__line {
+    width: 100%;
+    height: 1px;
+    margin: 24px 0;
+    background-color: var(--white-EB);
+}
+.projects__content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    gap: 12px;
+}
+
+.filters {
+    width: 100%;
+    margin-top: 16px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+}
+.filter {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    position: relative;
+}
+.filter__title {
+    font-family: var(--heading-font);
+    font-style: italic;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    margin-bottom: 12px;
+}
+.filter__btns {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+.filter__btn {
+    font-weight: 500;
+    font-size: 14px;
+    background-color: var(--white-EB);
+    height: 30px;
+    padding: 0 8px 0 6px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    border-radius: 10px;
+}
+.filter__btn-icon {
+    width: 16px;
+    height: 16px;
+}
+.filters__line {
+    background-color: var(--white-EB);
+    width: 100%;
+    height: 1px;
+}
+.filter__check-boxes {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 8px;
+}
+.filter__check-box {
+    font-weight: 500;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.filter__check-box:hover {
+    cursor: pointer;
+}
+.filter__check-box-input {
+    background-color: transparent;
+    width: 20px;
+    height: 20px;
+    border: 1.5px solid #10101126;
+    border-radius: 6px;
+    display: grid;
+    place-content: center;
+    appearance: none;
+    -webkit-appearance: none;
+    transition: var(--transition);
+}
+.filter__check-box-input:checked {
+    background: var(--green);
+}
+.filter__check-box-input:hover {
+    border: 1.5px solid var(--green);
+}
+.filter__check-box-input:focus {
+    border: 1.5px solid var(--green);
+}
+.filter__drop-btn {
+    font-weight: 500;
+    font-size: 14px;
+    background-color: var(--white-EB);
+    width: 220px;
+    height: 50px;
+    box-sizing: border-box;
+    padding: 0px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 18px;
+    transition: var(--transition);
+}
+.filter__drop-btn-icon {
+    width: 24px;
+    height: 24px;
+}
+.filter__drop-menu {
+    background-color: var(--white-F);
+    box-shadow: 0 10px 4px 0 #38383805, 0 15px 4px 0 #38383800;
+    width: 220px;
+    box-sizing: border-box;
+    padding: 12px;
+    border-radius: 18px;
+    position: absolute;
+    top: 100%;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    transition: var(--transition);
+}
+.filter__drop-menu_visible {
+    top: 110%;
+    opacity: 1;
+    pointer-events: all;
+}
+.filter__date-input {
+    font-weight: 500;
+    font-size: 14px;
+    background-color: var(--white-EB);
+    width: 220px;
+    height: 50px;
+    box-sizing: border-box;
+    padding: 0px 12px;
+    border-radius: 18px;
+}
+
+.projects-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+.project-card {
+    background-color: var(--white-EB);
+    width: 100%;
+    height: 100%;
+    max-height: 320px;
+    box-sizing: border-box;
+    padding: 6px;
+    display: grid;
+    grid-template-columns: 675px 1fr;
+    gap: 6px;
+    border-radius: 24px;
+}
+.company {
+    background-color: var(--white-F);
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 20px;
+}
+.company__logo {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 12px;
+}
+.company__heading {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 6px;
+}
+.company__title {
+    font-family: var(--heading-font);
+    font-style: italic;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+}
+.company__verification {
+    width: 24px;
+    height: 24px;
+}
+.company__date {
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+.company__types {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 14px;
+}
+.company__type {
+    background-color: var(--white-EB);
+    padding: 6px 8px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    border-radius: 10px;
+}
+.company__type-icon {
+    width: 16px;
+    height: 16px;
+}
+.company__type-text {
+    font-weight: 500;
+    font-size: 14px;
+}
+.company__description {
+    color: var(--black);
+    font-weight: 400;
+    font-size: 14px;
+    max-width: 400px;
+    opacity: 0.4;
+}
+.vacancies {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.vacancies__title {
+    color: #10101166;;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+.vacancies__title-span {
+    color: var(--black);
+}
+.vacancies__items {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 4px;
+}
+.vacancies__item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.vacancies__icon {
+    width: 32px;
+    height: 32px;
+}
+.vacancies__description {
+    font-family: var(--heading-font);
+    font-style: italic;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+}
+.vacancies__star-btn {
+    background: var(--white-F7);
+    width: 38px;
+    height: 38px;
+    margin: auto 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    box-shadow: 0 4px 9px 0 #00000012;
+}
+.vacancies__star-btn:hover .vacancies__star-icon-path {
+    fill: var(--green);
+}
+.vacancies__star-icon {
+    width: 24px;
+    height: 24px;
+}
+.vacancies__star-icon-path {
+    transition: var(--transition);
+}
+.projects-list__btn {
+    color: var(--black);
+    font-weight: 500;
+    font-size: 17px;
+    background-color: var(--white-EB);
+    padding: 16px 30px;
+    margin-top: 8px;
+    border-radius: 18px;
 }
 
 .footer {
@@ -130,6 +510,7 @@
     height: 240px;
     box-sizing: border-box;
     padding: 24px 0;
+    margin-top: 140px;
     display: flex;
     align-items: end;
     justify-content: center;
